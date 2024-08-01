@@ -1,0 +1,177 @@
+body {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/cars/multiple-car.jpg');
+  background-size: cover;
+}
+
+.container {
+    padding: 20px;
+}
+
+.btn-home button {
+    background-color: #10555f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-home button a {
+    color: white;
+    text-decoration: none;
+    background-color: #10555f;
+}
+
+.btn-home button:hover {
+    background-color: #ffffff;
+    border: 2px solid #10555f;
+}
+
+.tabs-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button.active,
+.tab-button:hover {
+    background-color: #10555f;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header h2 {
+    margin-bottom: 10px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #10555f;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #10555f;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #ffffff;
+    color: #10555f;
+    border: 1px solid #10555f;
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.switch-form a {
+    color: #10555f;
+    text-decoration: none;
+}
+
+.switch-form a:hover {
+    text-decoration: underline;
+}
+
+.book-now-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-now-section .form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.book-now-section .form-control {
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.book-now-section .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #10555f;
+    border-color: #10555f;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-section .btn-primary:hover {
+    background-color: #fafafa;
+    color: #10555f;
+}
+
+.booking-info h4 {
+    margin-bottom: 20px;
+}
+
+.booking-info p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.booking-info i {
+    color: #10555f;
+    margin-right: 10px;
+}

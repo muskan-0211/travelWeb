@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navs">
+            <div class="container-fluid nav-section navs">
+                <a class="navbar-brand logo" href="#"><img class="logo-img" src="/assets/images/logo.jpg"
+                        alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto menu-item mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                       
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="/services.html">Services</a>
+                            <!-- <a class="nav-link dropdown-toggle" href="/services.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a> -->
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EST (Employee Transportation)</a></li>
+                                <li><a class="dropdown-item" href="#">Airport Transfers</a></li>
+                                <li><a class="dropdown-item" href="#">Outstation</a></li>
+                                <li><a class="dropdown-item" href="#">Luxury and VIP Car-Rental Services</a></li>
+                                <li><a class="dropdown-item" href="#">Event Transport</a></li>
+                                <li><a class="dropdown-item" href="#">Long-term Lease: Luxury and SUV</a></li>
+                                <li><a class="dropdown-item" href="#">EV</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pan-India
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/bslr.html">Bangalore</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Chennai</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Kolkata</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Mumbai</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Hyderabad</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Delhi</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Pune</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Ahmedabad</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="/carrer.html">Careers</a>
+                            
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Fleet</a></li>
+                                <li><a class="dropdown-item" href="#">Chauffeurs</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="nav-section nav-menu login-section">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="/login-signup.html">
+                                    Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <form class="d-flex nav-menu search-form" role="search">
+                            <input class=" search-form search-input" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-dark search-button" type="submit">
+                                <i class="fa-solid fa-magnifying-glass search-btn-i"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-------------------------------- banner ----------------------->
+    <section>
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner banner g-0">
+                <div class="carousel-item active banner-home-img">
+                    <img src="/assets/images/car gallery/home-banner3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item banner-home-img g-0">
+                    <img src="/assets/images/car gallery/home-banner2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item banner-home-img g-0">
+                    <img src="/assets/images/car gallery/home-banner1.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+    <section>
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-12 p-0">
+                    <div class="banner-content">
+                        <h1 class="h1-banner">
+                            Best Corporate Car Rental Service in India
+                        </h1>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="container g-0  small-banner ">
+            <div class="row g-0 ">
+                <div class="col-12  banner-title ">
+                    <h1>Sri Sai Corporate Mobility Success Snapshot</h1>
+                </div>
+                <div class="col-md-3 banner-item">
+                    Pan-India operations with over 295+ Cities
+                </div>
+                <div class="col-md-3 banner-item">
+                    1 Million+ Corporate Car-Rental Trips
+                </div>
+                <div class="col-md-3 banner-item">
+                    20+ Years experience with 4117+ Fleet
+                </div>
+                <div class="col-md-3 banner-item">
+                    End-to-End Mobility Automation System
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row img-cont">
+                <div class="col-md-6 m-auto  bus-img">
+                    <img src="/assets/images/car gallery/home-bus2.jpg" alt="">
+                </div>
+                <div class="col-md-6 bus-img-cont">
+                    <h3>Travel With Us</h3>
+                    <p>Embark on an unforgettable journey as you explore the wonders of the world with our tailored
+                        travel and tour packages. Whether you're seeking the serene beauty of pristine beaches, the rich
+                        history of ancient cities, or the thrill of adventurous escapades, we have something for every
+                        traveler.</p>
+                    <p>Our experienced guides and well-crafted itineraries ensure that every moment of your trip is
+                        filled with discovery, excitement, and relaxation. Let us take you to places you've only dreamed
+                        of and create memories that will last a lifetime.</p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- --------------------------------about us -->
+    <section class="about-section">
+        <div class="container-fluid ">
+            <div class="row text-center text-white">
+                <div class="col-md-12 bus-content m-auto">
+                    <h1>About Us</h1>
+
+                    <h2 class="h1-banner">Sri Sai's Major Car-Rental Services</h2>
+
+                    <p>Travel the world with us</p>
+
+                    <p>Best tour</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <nav>
+                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">ETS</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Airport Transfers</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Outstation</button>
+                            <button class="nav-link" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event" type="button" role="tab" aria-controls="nav-event" aria-selected="false">Event</button>
+                            <button class="nav-link" id="nav-vip-tab" data-bs-toggle="tab" data-bs-target="#nav-vip" type="button" role="tab" aria-controls="nav-vip" aria-selected="false">VIP</button>
+                            <button class="nav-link" id="nav-lease-tab" data-bs-toggle="tab" data-bs-target="#nav-lease" type="button" role="tab" aria-controls="nav-lease" aria-selected="false">Lease</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content p-4" id="nav-tabContent">
+                       
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h3>ETS - Executive Transport Solutions</h3>
+                                    <ul>
+                                        <li>Premium Chauffeur Services: Experience the ultimate in comfort and professionalism with our executive chauffeur-driven vehicles.</li>
+                                        <li>Corporate Travel: Tailored solutions for business executives with high standards of service and convenience.</li>
+                                        <li>Luxury Fleet: Choose from a range of high-end vehicles to suit your needs and preferences.</li>
+                                    </ul>
+                                </div>
+                                <img src="/assets/images/car gallery/ets.jpg" class="img-fluid tab-image" alt="ETS">
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h3>Airport Transfers</h3>
+                                    <ul>
+                                        <li>Seamless Transfers: Efficient and comfortable transfers to and from the airport.</li>
+                                        <li>Meet and Greet Service: Personalized welcome and assistance at the airport for a smooth transition.</li>
+                                        <li>24/7 Availability: Reliable airport transfers available around the clock to fit your flight schedule.</li>
+                                    </ul>
+                                </div>
+                                <img src="/assets/images/car gallery/airport.jpg" class="img-fluid tab-image" alt="Airport Transfers">
+                            </div>
+                        </div>
+                     
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h3>Outstation Services</h3>
+                                    <ul>
+                                        <li>Comfortable Journeys: Enjoy long-distance travel with our spacious and comfortable vehicles.</li>
+                                        <li>Flexible Itineraries: Customizable travel plans to suit your destination and schedule.</li>
+                                        <li>Experienced Drivers: Professional drivers with extensive knowledge of routes and local areas.</li>
+                                    </ul>
+                                </div>
+                                <img src="/assets/images/car gallery/out-station.jpg" class="img-fluid tab-image" alt="Outstation">
+                            </div>
+                        </div>
+                      
+                        <div class="tab-pane fade" id="nav-event" role="tabpanel" aria-labelledby="nav-event-tab" tabindex="0">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h3>Event Transport</h3>
+                                    <ul>
+                                        <li>Specialized Event Solutions: Tailored transportation services for weddings, conferences, and other events.</li>
+                                        <li>On-Time Service: Reliable transportation to ensure guests arrive promptly and comfortably.</li>
+                                        <li>Fleet Management: Coordinated vehicle management to handle large groups and multiple events.</li>
+                                    </ul>
+                                </div>
+                                <img src="/assets/images/car gallery/VAN.jpg" class="img-fluid tab-image" alt="Event">
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="nav-vip" role="tabpanel" aria-labelledby="nav-vip-tab" tabindex="0">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h3>VIP Services</h3>
+                                    <ul>
+                                        <li>Exclusive VIP Transport: High-end vehicles and personalized service for our VIP clients.</li>
+                                        <li>Discreet and Secure: Ensuring privacy and security throughout your journey.</li>
+                                        <li>Luxury Amenities: Premium comfort features including refreshments and entertainment options.</li>
+                                    </ul>
+                                </div>
+                                <img src="/assets/images/car gallery/vip.jpg" class="img-fluid tab-image" alt="VIP">
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="nav-lease" role="tabpanel" aria-labelledby="nav-lease-tab" tabindex="0">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h3>Vehicle Leasing</h3>
+                                    <ul>
+                                        <li>Flexible Leasing Options: Short-term and long-term leasing solutions to meet your needs.</li>
+                                        <li>Varied Fleet: Choose from a range of vehicles, including luxury and standard options.</li>
+                                        <li>Maintenance Included: Comprehensive support and maintenance services included with all leases.</li>
+                                    </ul>
+                                </div>
+                                <img src="/assets/images/car gallery/car-tab.jpg" class="img-fluid tab-image" alt="Lease">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!---------------------------------- clients -->
+    <section id="our-clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h1 class="header-with-images">Our Client</h1>
+                </div>
+                <div id="clientsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img src="/assets/images/banner3.jpg" class="d-block w-100" alt="Brand 1">
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img src="/assets/images/banner1.jpg" class="d-block w-100" alt="Brand 2">
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img src="/assets/images/banner3.jpg" class="d-block w-100" alt="Brand 3">
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img src="/assets/images/banner2.jpg" class="d-block w-100" alt="Brand 4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img src="/assets/images/banner1.jpg" class="d-block w-100" alt="Brand 5">
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img src="/assets/images/banner3.jpg" class="d-block w-100" alt="Brand 6">
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img src="/assets/images/banner1.jpg" class="d-block w-100" alt="Brand 7">
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img src="/assets/images/banner2.jpg" class="d-block w-100" alt="Brand 8">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev previous" type="button" data-bs-target="#clientsCarousel" data-bs-slide="prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next next" type="button" data-bs-target="#clientsCarousel" data-bs-slide="next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------- news -->
+    <section class="featured-section">
+        <h2>Featured In: News & Media</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="/assets/images/banner1.jpg" alt="Media 1">
+                <div class="card-content">
+                    <h3> Brand Magazine</h3>
+                    <p>The Inspiring Journey of Shankar H R and Sri Sai: From One Car to a Leading Mobility Company in
+                        India</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/images/banner2.jpg" alt="Media 2">
+                <div class="card-content">
+                    <h3>Business</h3>
+                    <p>
+                        Top 10 factors that make Sri Sai the best EV car rental company in India
+
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/images/banner3.jpg" alt="Media 3">
+                <div class="card-content">
+                    <h3>Luxury Vacation</h3>
+                    <p>The Inspiring Journey of Shankar H R and Sri Sai: From One Car to a Leading Mobility Company in
+                        India</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+     <!-- Top Destinations  -->
+     <section id="top-des">
+        <div class="container ">
+            <div class="row top">
+                <div class="col-12 text-center mb-5 ">
+                    <h1 class="header-top-des">Top Destinations</h1>
+                </div>
+                <div id="clientsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item carousel-client active dest-client">
+                            <div class="row">
+                                <div class="col-md-3 col-12 dest-img">
+                                    <div class="img-overlay">
+                                        <img src="/assets/images/banner1.jpg" class="d-block w-100" alt="India">
+                                        <div class="overlay">
+                                            <p>India</p>
+                                            <samp>Starting Price</samp>
+                                            <p>6000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-12 dest-img">
+                                    <div class="img-overlay">
+                                        <img src="/assets/images/banner3.jpg" class="d-block w-100" alt="India">
+                                        <div class="overlay">
+                                            <p>India</p>
+                                            <samp>Starting Price</samp>
+                                            <p>6000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-12 dest-img">
+                                    <div class="img-overlay">
+                                        <img src="/assets/images/banner1.jpg" class="d-block w-100" alt="India">
+                                        <div class="overlay">
+                                            <p>India</p>
+                                            <samp>Starting Price</samp>
+                                            <p>6000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-12 dest-img">
+                                    <div class="img-overlay">
+                                        <img src="/assets/images/banner2.jpg" class="d-block w-100" alt="India">
+                                        <div class="overlay">
+                                            <p>India</p>
+                                            <samp>Starting Price</samp>
+                                            <p>6000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item dest-client">
+                            <div class="row">
+                                <div class="col-md-3 col-12 dest-img">
+                                    <div class="img-overlay">
+                                        <img src="/assets/images/banner3.jpg" class="d-block w-100" alt="India">
+                                        <div class="overlay">
+                                            <p>India</p>
+                                            <samp>Starting Price</samp>
+                                            <p>6000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-12 dest-img">
+                                    <div class="img-overlay">
+                                        <img src="/assets/images/banner1.jpg" class="d-block w-100" alt="India">
+                                        <div class="overlay">
+                                            <p>India</p>
+                                            <samp>Starting Price</samp>
+                                            <p>6000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-12 dest-img">
+                                    <div class="img-overlay">
+                                        <img src="/assets/images/banner2.jpg" class="d-block w-100" alt="India">
+                                        <div class="overlay">
+                                            <p>India</p>
+                                            <samp>Starting Price</samp>
+                                            <p>6000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-12 dest-img">
+                                    <div class="img-overlay">
+                                        <img src="/assets/images/banner3.jpg" class="d-block w-100" alt="India">
+                                        <div class="overlay">
+                                            <p>India</p>
+                                            <samp>Starting Price</samp>
+                                            <p>6000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button class="carousel-control-prev previous" type="button" data-bs-target="#clientsCarousel" data-bs-slide="prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next next" type="button" data-bs-target="#clientsCarousel" data-bs-slide="next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- who we are -->
+    <section class="who-we-are">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="/assets/images/car-pic.jpg" alt="Car Picture">
+                </div>
+                <div class="col-md-6">
+                    <h1>Who We Are</h1>
+                    <p>Sri Sai, a leading car rental from Regalindia Tours And Travels Private Limited, with a fleet size
+                        of 4117+ Cabs, 4240+ Chauffeurs, and 300+ Clients across 295+ Cities. Since its inception in
+                        2004, Sri Sai has witnessed stupendous growth through its exceptional service, strong team,
+                        industry benchmarking processes, and continuous upgrading to the latest technology.</p>
+                    <p>Sri Sai offers full stack car rental services ranging from Economy Sedan to Luxury Cars and Coaches.
+                    </p>
+                    <p>Sri Sai is known for adding continuous value to clients and for ensuring the total well-being of
+                        Chauffeurs. 67% of Chauffeurs and 81% of Clients have been with Sri Sai for more than a decade,
+                        which is a testimony to that.</p>
+                    <p>Sri Sai is proactively adding more Electric and CNG Cars to its fleet and has set a target to become
+                        a 100% Green Fleet by 2030. Sri Sai is ISO Certified for Quality & is in the list of ’10 Best
+                        Transport Aggregators in India’ and is the preferred choice of corporate mobility across
+                        industries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    
+    
+    
+   
+    
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Sri Sai, a leading car rental company, offers a fleet of over 4000 cars and chauffeurs across more than
+                    290 cities.</p>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/services.html">Services</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>No 125, Dr. Rajkumar Road,
+                    1st K Block,Rajaji Nagara, Bangalore 560010, Karnataka
+                </p>
+                <p>Email: sai@gamil.com</p>
+                <p>Phone: (+91) 672-73890-08</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
+    
+</body>
+
+</html>

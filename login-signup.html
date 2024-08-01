@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="btn-home mb-3">
+                    <button type="submit" class="btn btn-primary"><a href="/index.html">Home</a></button>
+                </div>
+                <div class="tabs-container">
+                    <div class="tabs">
+                        <div class="tab-buttons mb-3">
+                            <button data-tab="login" class="tab-button">Login</button>
+                            <button data-tab="signup" class="tab-button">Sign Up</button>
+                        </div>
+                        <div id="login" class="tab-content active">
+                            <div class="form-container">
+                                <div class="form-header">
+                                    <h2>Login</h2>
+                                    <p>Sign in to your account</p>
+                                </div>
+                                <form class="form-content">
+                                    <div class="input-group">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <i class="fas fa-lock"></i>
+                                        <input type="password" placeholder="Password" required>
+                                    </div>
+                                    <button type="submit" class="btn-submit">Login</button>
+                                    <p class="switch-form">Don't have an account? <a href="#signup">Sign Up</a></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="signup" class="tab-content">
+                            <div class="form-container">
+                                <div class="form-header">
+                                    <h2>Sign Up</h2>
+                                    <p>Create a new account</p>
+                                </div>
+                                <form class="form-content">
+                                    <div class="input-group">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" placeholder="Full Name" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <i class="fas fa-lock"></i>
+                                        <input type="password" placeholder="Password" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <i class="fas fa-lock"></i>
+                                        <input type="password" placeholder="Confirm Password" required>
+                                    </div>
+                                    <button type="submit" class="btn-submit">Sign Up</button>
+                                    <p class="switch-form">Already have an account? <a href="#login">Login</a></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="book-now-section">
+                    <h2 class="text-center mb-4">Book Now</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Select Service</label>
+                            <select class="form-control" id="service">
+                                <option>Bus Service</option>
+                                <option>Cab Service</option>
+                                <option>Car Service</option>
+                                <option>Van Service</option>
+                                <option>Truck Service</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Book Now</button>
+                    </form>
+                    <div class="booking-info mt-4 mb-4">
+                        <h4>Why Book With Us?</h4>
+                        <p><i class="fas fa-check-circle"></i> Reliable and Comfortable Services</p>
+                        <p><i class="fas fa-check-circle"></i> Professional and Experienced Drivers</p>
+                        <p><i class="fas fa-check-circle"></i> Affordable Pricing</p>
+                        <p><i class="fas fa-check-circle"></i> 24/7 Customer Support</p>
+                        <p><i class="fas fa-check-circle"></i> Easy Online Booking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                document.querySelectorAll('.tab-content').forEach(tabContent => {
+                    tabContent.classList.toggle('active', tabContent.id === tabId);
+                });
+                document.querySelectorAll('.tab-button').forEach(btn => {
+                    btn.classList.toggle('active', btn.getAttribute('data-tab') === tabId);
+                });
+            });
+        });
+
+        document.querySelector('.tab-button[data-tab="login"]').click();
+    </script>
+</body>
+</html>

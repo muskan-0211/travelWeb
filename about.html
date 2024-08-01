@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navs">
+            <div class="container-fluid nav-section navs">
+                <a class="navbar-brand logo" href="#"><img class="logo-img" src="/assets/images/logo.jpg"
+                        alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto menu-item mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                       
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="/services.html">Services</a>
+                            <!-- <a class="nav-link dropdown-toggle" href="/services.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a> -->
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EST (Employee Transportation)</a></li>
+                                <li><a class="dropdown-item" href="#">Airport Transfers</a></li>
+                                <li><a class="dropdown-item" href="#">Outstation</a></li>
+                                <li><a class="dropdown-item" href="#">Luxury and VIP Car-Rental Services</a></li>
+                                <li><a class="dropdown-item" href="#">Event Transport</a></li>
+                                <li><a class="dropdown-item" href="#">Long-term Lease: Luxury and SUV</a></li>
+                                <li><a class="dropdown-item" href="#">EV</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pan-India
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/bslr.html">Bangalore</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Chennai</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Kolkata</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Mumbai</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Hyderabad</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Delhi</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Pune</a></li>
+                                <li><a class="dropdown-item" href="/bslr.html">Ahmedabad</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="/carrer.html">Careers</a>
+                            
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Fleet</a></li>
+                                <li><a class="dropdown-item" href="#">Chauffeurs</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="nav-section nav-menu login-section">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="/login-signup.html">
+                                    Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <form class="d-flex nav-menu search-form" role="search">
+                            <input class=" search-form search-input" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-dark search-button" type="submit">
+                                <i class="fa-solid fa-magnifying-glass search-btn-i"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- banner -->
+    <section id="about-banner">
+        <div class="container-fluid g-0">
+            <div class="row g-0">
+                <div class="col-md-12 g-0">
+                    <div class="about-img">
+                        <h2>Explore your inner advanture with us...</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- about content -->
+    <section class="abt-section py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="abt-images">
+                        <div class="img-one ">
+                            <img src="/assets/images/car gallery/about-bus1.jpg" alt="Women Traveling" class="img-fluid">
+                        </div>
+                        <div class="img-two">
+                            <img src="/assets/images/car gallery/about-bus2.jpg" alt="Man Traveling" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="abt-h3">Explore the World</h3>
+                    <h2 class="abt-h2">Great Opportunity For <span class="span-abt-cont">Adventure</span> & Travels</h2>
+                    <p class="abt-cont-p1">When preparing to travel, lay out all your clothes and all your money. Then take half the clothes and twice the money.</p>
+                    <p class="abt-cont-p2">A range of programs and supports in the disability including:</p>
+                    <ul class="abt-ul">
+                        <li>Discover great deals on hotels around the world</li>
+                        <li>Our tours are designed with people</li>
+                        <li>Let your local host tailor the tour completely to your wish.</li>
+                    </ul>
+                    <button class="mt-3 abt-btn">More About Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- video sectio -->
+    <section class="fullscreen-video-section">
+        <div class="video-container">
+            <iframe class="fullscreen-video" src="https://www.youtube.com/embed/a9r8WGAQyHU?autoplay=1&mute=1&loop=1&playlist=a9r8WGAQyHU&controls=0&showinfo=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-overlay">
+            <h1 class="vid-h1">Welcome to Our Travel Site</h1>
+            <p class="vid-p">Explore the world with us.</p>
+        </div>
+    </section>
+    <!-- feature tour -->
+    <section class="featured-cards-section py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h3 class="fet-h3">Featured Destinations</h3>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center mb-4">
+                    <div class="card">
+                        <img src="assets/images/featured2.jpg" class="card-img-top" alt="Destination 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Beautiful Beaches</h5>
+                            <p class="card-text">Discover the most beautiful beaches around the world with crystal clear waters and white sands.</p>
+                            <button class="mt-3 fet-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center mb-4">
+                    <div class="card">
+                        <img src="assets/images/featured1.jpg" class="card-img-top" alt="Destination 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Mountain Adventures</h5>
+                            <p class="card-text">Experience the thrill of mountain adventures with our exclusive tour packages.</p>
+                            <button class="mt-3 fet-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center mb-4">
+                    <div class="card">
+                        <img src="assets/images/featured3.jpg" class="card-img-top" alt="Destination 3">
+                        <div class="card-body">
+                            <h5 class="card-title">City Tours</h5>
+                            <p class="card-text">Explore the bustling cities and their vibrant cultures with our guided city tours.</p>
+                            <button class="mt-3 fet-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Rego, a leading car rental company, offers a fleet of over 4000 cars and chauffeurs across more than
+                    290 cities.</p>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/services.html">Services</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>No 125, Dr. Rajkumar Road,
+                    1st K Block,Rajaji Nagara, Bangalore 560010, Karnataka
+                </p>
+                <p>Email: sai@gamil.com</p>
+                <p>Phone: (+91) 672-73890-08</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
